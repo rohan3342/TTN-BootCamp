@@ -22,12 +22,14 @@ ul{
 header{
     background: #ccc;
     height: 70px;
+    box-shadow: 0 5px whitesmoke;
 }
 
 .logo-img{
-    width: 100px;
     height: 50px;
-    background-color: aqua;
+    background: whitesmoke;
+    border-radius: 6px;
+    padding: 5px;
 }
 
 nav{
@@ -56,7 +58,8 @@ nav{
 
 /* Side Nav */
 #side-nav{
-    min-width: 10%;
+    margin-top: 5px;
+    min-width: 20%;
     padding: 20px 40px 0 40px;
     background: #888888;
     /* height: calc(100vh - 70px); */
@@ -152,7 +155,7 @@ input{
     border: none;
     width: 90%;
     border-radius: 5px;
-    background: #e3e3e3;
+    background: whitesmoke;
 }
 
 input[type="submit"]{
@@ -166,14 +169,30 @@ input[type="submit"]{
 }
 
 /* Table */
+#table{
+    padding: 10px;
+    border: 1px solid #77D862;
+    border-radius: 6px;
+    margin-bottom: 50px;
+    color: rgb(46, 42, 42);
+}
+
 table{
+    margin: 10px 0;
     width: 100%;
-    margin-bottom: 20px;
     font-size: 1.2rem;
     text-align: center;
-    /* border: 2px solid lightcoral; */
+    border: 2px solid #77D862;
+    border-collapse: collapse;
 }
 
 th, td{
-    border: 2px solid #77D862;
+    border: 2px solid #e3e3e3;
+    padding: 2px 8px 0;
+    text-align: center;
+}
+
+thead > tr > th {
+    background-color: #77D862;
+    font-size: 18px;
 }
