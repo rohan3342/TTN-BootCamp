@@ -1,0 +1,199 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Common Properties */
+h1{
+    margin: 20px 10px;
+    padding: 20px;
+    background-color: #6e6e6e;
+    color: white;
+    font-family: 'Segoe UI';
+    border: none;
+    border-radius: 10px;
+}
+
+.container > p, .container > ul , .container > a, .container > h3 {
+    margin: 10px 20px;
+    padding: 10px;
+}
+
+hr{
+    border: none;
+    border-radius: 10px;
+    margin: 20px 10px;
+    height: 10px;
+    background-color: lightgray;
+}
+
+
+/********** Font Properties **********/
+.font-container, .font-container-styles{
+    margin: 10px 20px;
+    padding: 10px 0;
+    border: none;
+    border-radius: 20px;
+    background-color: #4e3d53;
+    color: white;
+}
+.font-container-styles{
+    background-color: #a98b98;
+}
+
+/* Font Family */
+.font-family-monospace{
+    font-family: monospace;
+}
+
+/* Font Size */
+.font-size-1_5x{
+    font-size: 1.5rem;
+}
+.font-size-2x{
+    font-size: 2rem;
+}
+
+/* Font Weight */
+.font-weight-100{ font-weight: 100; }
+.font-weight-200{ font-weight: 200; }
+.font-weight-300{ font-weight: 300; }
+.font-weight-400{ font-weight: 400; }
+.font-weight-500{ font-weight: 500; }
+.font-weight-600{ font-weight: 600; }
+.font-weight-700{ font-weight: 700; }
+.font-weight-800{ font-weight: 800; }
+.font-weight-900{ font-weight: 900; }
+
+/* Font Variant */
+.font-variant-small-caps{
+    font-variant: small-caps;
+}
+/* Font Style */
+.font-style-italic{
+    font-style: italic;
+}
+.font-style-oblique{
+    font-style: oblique;
+}
+
+/*********** Background Properties ***********/
+p.bg-color,.background-img{
+    border: none;
+    border-radius: 10px;
+}
+
+.bg-color{ background-color: lightgreen; }
+
+.background-img1{ background: no-repeat url('https://source.unsplash.com/random/250x250'); }
+
+.background-img2{ background: repeat url('https://source.unsplash.com/random/100x100'); }
+
+.background-img1, .background-img2{
+    display: inline-block;
+    border: 2px solid lightgreen;
+    margin: 10px 20px ;
+    height: 300px;
+    width: 300px;
+    background-position: center;
+}
+
+/*********** Pseudo Selectors ***********/
+li{ list-style: none; }
+
+.child-selector, .nth-child-selector{
+    border: none;
+    border-radius: 5px;
+}
+
+.child-selector li:first-child::before { content: "\""; }
+.child-selector li:first-child::after { content: "\""; }
+
+.child-selector{ background: #aee1e1; }
+
+.nth-child-selector{ background: #d3e0dc; }
+
+
+ul.child-selector  > li { font-size: 1.2rem; }
+
+ul.child-selector li:first-child{ font-family: monospace; }
+
+ul.child-selector li:last-child{ font-family: 'Franklin Gothic Medium'; }
+
+ul.nth-child-selector > li {
+    font-family: monospace;
+    font-size: 1.2rem;
+}
+ul.nth-child-selector li:nth-child(even){ color: lightcoral; }
+
+ul.nth-child-selector li:nth-child(odd){ color: lightslategray; }
+
+.hover-effect{
+    width: 170px;
+    display: block;
+    color: whitesmoke;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 3px;
+    transition: all 0.3 ease-in-out;
+    background-color: #383e56;
+}
+.hover-effect:hover{ background-color: #9fb8ad; }
+
+/*********** Combinators Selectors ***********/
+.combinator p, .combinator h3{
+    font-size: 1.1rem;
+    color: white;
+}
+
+.combinator h3 { background: #583d72; }
+
+.combinator h3 + p{
+    background-color: #9f5f80;
+    font-size: 1.5rem;
+}
+
+.combinator > p{ background: #ffba93; }
+
+.combinator ~ div.sibling{
+    margin: 10px 20px;
+    padding: 10px;
+    background-color: #ff8e71;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.combinator > p, .combinator > h3, .sibling{
+    border: none;
+    border-radius: 10px;
+}
+
+
+/*********** Attribute Selectors ***********/
+.attribute-selector a{
+    margin: 10px 20px;
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    display: block;
+    background-color: #9b5151;
+    border-radius: 5px;
+}
+
+input{
+    color: white;
+    margin: 10px 20px;
+    padding: 10px;
+    display: inline-block;
+    font-size: 1.4rem;
+    border: none;
+    border-radius: 5px ;
+}
+
+a[target]{ background-color: #e97878; }
+
+input[type="text"]{ background-color: #719fb0; }
+
+input[type="submit"]{ background-color: #726a95; }

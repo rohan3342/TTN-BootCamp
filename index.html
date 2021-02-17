@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS Basic </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 
+        Dated: 17/2/2021
+        FEEN Bootcamp Assesment - CSS Basic
+        Submitted to: Nikita Khaana
+        Designed by: Rohan Kumar Singh
+    -->
+
+    <!-- Font Properties: font-family, font-size, font-weight, font-variant, font-style.-->
+    <h1>Font Properties</h1>
+    <div class="container font-container">
+        <p class="font-family-monospace font-size-2x">Font Family: Monospace, Font Size: 2rem</p>
+        <p class="font-weight-100 font-size-1_5x">Font Weight 100</p>
+        <p class="font-weight-200 font-size-1_5x">Font Weight 200</p>
+        <p class="font-weight-300 font-size-1_5x">Font Weight 300</p>
+        <p class="font-weight-400 font-size-1_5x">Font Weight 400</p>
+        <p class="font-weight-500 font-size-1_5x">Font Weight 500</p>
+        <p class="font-weight-600 font-size-1_5x">Font Weight 600</p>
+        <p class="font-weight-700 font-size-1_5x">Font Weight 700</p>
+        <p class="font-weight-800 font-size-1_5x">Font Weight 800</p>
+        <p class="font-weight-900 font-size-1_5x">Font Weight 900</p>
+    </div>
+
+    <div class="container font-container-styles">
+        <p class="font-variant-small-caps font-size-1_5x">Font Variant Small Caps</p>
+        <p class="font-style-italic font-size-1_5x">Font Style Italic</p>
+        <p class="font-style-oblique font-size-1_5x">Font Style Oblique</p>
+        <p class="font-size-1_5x">Font Style Normal</p>
+    </div>
+
+    <hr>
+    
+    <!-- Background Properties: background-image, background-repeat -->
+    <h1>Background Properties</h1>
+    <div class="container">
+        <p class="bg-color font-family-monospace font-size-1_5x">Paragraph Tag With Background Color: lightgreen</p>
+        <div class="background-img1"> </div>
+        <div class="background-img2"> </div>
+    </div>
+
+    <hr>
+
+    <!-- Pseudo selectors: before, after, first-child, last-child, nth-child, hover-->
+    <h1>Pseudo Classes</h1>
+    <div class="container">
+        <ul class="child-selector">
+            <li>First Child</li>
+            <li>Last Child</li>
+        </ul>
+    
+        <ul class="nth-child-selector">
+            <li>First</li>
+            <li>Second</li>
+            <li>Third</li>
+        </ul>
+    
+        <a class="hover-effect font-size-2x" href="#">Hover Effect</a>    
+    </div>
+
+    <hr>
+
+    <!-- Combinators: Desendent Combinators, Child Selector, Adjacent Sibling Selector, General Sibling Selector -->
+    <h1>Combinators</h1>
+    <div class="container combinator">
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    <div class="sibling">
+        General Sibling Selector Property
+    </div>
+    
+    <hr>
+    
+    <!-- Attributes Selector  -->
+    <h1>Attribute Selector</h1>
+    <div class="attribute-selector">
+        <a href="#">A Tag without Target Attribute </a>
+        <a href="#" target="_blank">A Tag with Target Attribute </a>
+    </div>
+    <input class="font-family-monospace" type="text">
+    <input class="font-family-monospace" type="submit" value="Submit" name="submit">
+</body>
+</html>
